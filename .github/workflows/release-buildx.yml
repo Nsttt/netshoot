@@ -44,6 +44,6 @@ jobs:
             --platform linux/amd64,linux/arm64 \
             --output "type=image,push=true" \
             --file ./Dockerfile \
-            --tag $GITHUB_REPOSITORY:$GITHUB_SHA \
-            --tag $GITHUB_REPOSITORY:$RELEASE_VERSION \
-            --tag $GITHUB_REPOSITORY:latest .
+            --tag docker.io/nsttt/netshoot:$GITHUB_SHA \
+            --tag docker.io/nsttt/netshoot:$RELEASE_VERSION \
+            --tag docker.io/nsttt/netshoot:latest .
